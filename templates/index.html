@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="English@Work – Más de 29 años enseñando inglés profesional. Clases 100% en línea, Business English, cursos para empresas y particulares." />
+  <title>English@Work | Inglés Profesional</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
+</head>
+<body>
+
+<!-- ===== NAVBAR ===== -->
+<nav id="navbar">
+  <a href="#hero" class="nav-logo">
+    <img src="/static/images/logo.png" alt="English@Work"
+         onerror="this.style.display='none'; this.nextElementSibling.style.display='block'" />
+    <span class="nav-logo-text" style="display:none">English<span>@</span>Work</span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="#hero">Inicio</a></li>
+    <li><a href="#about">Nosotros</a></li>
+    <li><a href="#services">Cursos</a></li>
+    <li><a href="#companies">Empresas</a></li>
+    <li><a href="#contact">Contacto</a></li>
+    <li><a href="#contact" class="nav-cta">Agenda una clase</a></li>
+  </ul>
+  <div class="hamburger">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+
+<!-- Mobile Menu -->
+<div class="mobile-menu">
+  <span class="mobile-close">✕</span>
+  <a href="#hero">Inicio</a>
+  <a href="#about">Nosotros</a>
+  <a href="#services">Cursos</a>
+  <a href="#companies">Empresas</a>
+  <a href="#contact">Contacto</a>
+  <a href="#contact" class="mobile-cta">Agenda una clase</a>
+</div>
+
+<!-- ===== HERO ===== -->
+<section id="hero">
+  <!-- Formas geométricas -->
+  <div class="hero-geo-1"></div>
+  <div class="hero-geo-2"></div>
+  <div class="hero-geo-3"></div>
+
+  <div class="hero-inner">
+    <!-- Izquierda -->
+    <div class="hero-left">
+      <div class="hero-badge">&#127891; Fundada en 2004</div>
+      <h1>Aprende Inglés con<br><span>Profesores Expertos</span></h1>
+      <p>Más de 29 años ayudando a estudiantes, profesionistas y empresas a dominar el idioma inglés mediante un método práctico, dinámico y orientado a resultados.</p>
+      <ul class="hero-checklist">
+        <li><span class="check">&#10003;</span> Clases 100% en línea</li>
+        <li><span class="check">&#10003;</span> Todas las clases quedan grabadas</li>
+        <li><span class="check">&#10003;</span> Business English</li>
+        <li><span class="check">&#10003;</span> Profesores certificados</li>
+        <li><span class="check">&#10003;</span> Conversación desde el primer día</li>
+      </ul>
+      <div class="hero-btns">
+        <a href="#contact" class="btn-primary">Agenda una clase</a>
+        <a href="#services" class="btn-outline">Conoce nuestros cursos</a>
+      </div>
+    </div>
+
+    <!-- Derecha -->
+    <div class="hero-right">
+      <div class="hero-logo-showcase">
+        <div class="hero-logo-glow"></div>
+        <div class="hero-logo-ring"></div>
+        <div class="hero-logo-card">
+          <img src="/static/images/logo.png" alt="English@Work" class="hero-logo-img" />
+          <div class="hero-logo-tagline">Ingl&eacute;s Profesional &bull; Desde 1995</div>
+        </div>
+        <div class="hero-logo-stats">
+          <div class="hv-stat">
+            <strong>29+</strong>
+            <span>A&ntilde;os ense&ntilde;ando</span>
+          </div>
+          <div class="hv-stat">
+            <strong>1000+</strong>
+            <span>Alumnos formados</span>
+          </div>
+          <div class="hv-stat">
+            <strong>50+</strong>
+            <span>Empresas</span>
+          </div>
+          <div class="hv-stat">
+            <strong>100%</strong>
+            <span>En l&iacute;nea</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== STATS ===== -->
+<section id="stats">
+  <div class="container">
+    <div class="stats-grid">
+      <div class="stat-card fade-up">
+        <div class="stat-card-icon">&#127941;</div>
+        <span class="stat-card-num" data-target="29" data-suffix="+">0+</span>
+        <span class="stat-card-label">A&ntilde;os de experiencia</span>
+      </div>
+      <div class="stat-card fade-up">
+        <div class="stat-card-icon">&#127891;</div>
+        <span class="stat-card-num" data-target="1000" data-suffix="+">0+</span>
+        <span class="stat-card-label">Alumnos formados</span>
+      </div>
+      <div class="stat-card fade-up">
+        <div class="stat-card-icon">&#127970;</div>
+        <span class="stat-card-num" data-target="50" data-suffix="+">0+</span>
+        <span class="stat-card-label">Empresas capacitadas</span>
+      </div>
+      <div class="stat-card fade-up">
+        <div class="stat-card-icon">&#127760;</div>
+        <span class="stat-card-num" data-target="100" data-suffix="%">0%</span>
+        <span class="stat-card-label">Clases en l&iacute;nea</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== ABOUT ===== -->
+<section id="about">
+  <div class="container">
+    <div class="about-grid">
+
+      <!-- Imagen con flip -->
+      <div class="about-img-wrap fade-up">
+        <div class="flip-card">
+          <div class="flip-inner">
+            <!-- Frente: foto real -->
+            <div class="flip-front">
+              <img src="/static/images/foto frank.jpeg" alt="Frank Brise&ntilde;o" />
+            </div>
+            <!-- Reverso: placeholder -->
+            <div class="flip-back">
+              <span class="placeholder-icon">&#128104;&#8205;&#127979;</span>
+              <span class="placeholder-name">Frank Brise&ntilde;o</span>
+              <span class="placeholder-title">Fundador &amp; Director</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-badge">29+ a&ntilde;os<br>de experiencia</div>
+      </div>
+
+      <!-- Contenido -->
+      <div class="about-content fade-up">
+        <span class="section-tag">Acerca de English@Work</span>
+        <h2>Frank Brise&ntilde;o<br><span>Fundador y Director</span></h2>
+
+        <p class="about-highlight">
+          Profesor M&eacute;xico-americano biling&uuml;e y bicultural nacido en San Francisco, California, EU.
+        </p>
+
+        <p>Con m&aacute;s de 29 a&ntilde;os de experiencia en la ense&ntilde;anza del idioma ingl&eacute;s, ha impartido clases a estudiantes, profesionistas y empresas utilizando un enfoque pr&aacute;ctico y comunicativo centrado en las necesidades del alumno.</p>
+
+        <p>Ha trabajado en la Ciudad de Guadalajara como Profesor de Ingl&eacute;s y Espa&ntilde;ol como lengua extranjera, con textos y materiales did&aacute;cticos propios como apoyo al aprendizaje m&aacute;s efectivo del idioma.</p>
+
+        <!-- Texto expandible -->
+        <div class="about-extra" id="aboutExtra">
+          <p>Decenas de estudiantes de todos los niveles educativos, ejecutivos de empresas y profesionistas han logrado hablar ingl&eacute;s con precisi&oacute;n, fluidez y sobre todo confianza en diversos ambientes sociales y laborales.</p>
+          <p>El Curso de Espa&ntilde;ol para Extranjeros ha tenido &eacute;xito con ejecutivos de empresas trasnacionales en Guadalajara.</p>
+        </div>
+
+        <div class="about-tags">
+          <span class="tag">Biling&uuml;e &amp; Bicultural</span>
+          <span class="tag">Business English</span>
+          <span class="tag">Material Propio</span>
+          <span class="tag">Grupos Peque&ntilde;os</span>
+          <span class="tag">Enfoque Comunicativo</span>
+        </div>
+
+        <button class="btn-secondary" id="btnLeerMas" onclick="toggleAbout()">
+          Leer m&aacute;s &#8594;
+        </button>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===== WHY US ===== -->
+<section id="why">
+  <div class="container text-center">
+    <span class="section-tag">Nuestra Diferencia</span>
+    <h2 class="section-title">&iquest;Por qu&eacute; elegir<br><span>English@Work?</span></h2>
+    <p class="section-sub">Especialistas en el caso m&aacute;s com&uacute;n: personas que <strong>entienden el ingl&eacute;s pero les da miedo hablarlo</strong>. Nuestro m&eacute;todo est&aacute; dise&ntilde;ado para romper esa barrera desde la primera clase, oblig&aacute;ndote a hablar en un ambiente de confianza, sin juicios y con conversaciones reales.</p>
+    <div class="why-grid">
+      <div class="why-card fade-up">
+        <div class="why-card-icon">&#127941;</div>
+        <h3>Profesores certificados</h3>
+      </div>
+      <div class="why-card fade-up">
+        <div class="why-card-icon">&#127760;</div>
+        <h3>Clases 100% en l&iacute;nea</h3>
+      </div>
+      <div class="why-card fade-up">
+        <div class="why-card-icon">&#127909;</div>
+        <h3>Clases grabadas</h3>
+      </div>
+      <div class="why-card fade-up">
+        <div class="why-card-icon">&#128188;</div>
+        <h3>Business English</h3>
+      </div>
+      <div class="why-card fade-up">
+        <div class="why-card-icon">&#128101;</div>
+        <h3>Grupos reducidos</h3>
+      </div>
+      <div class="why-card fade-up">
+        <div class="why-card-icon">&#128100;</div>
+        <h3>Atenci&oacute;n personalizada</h3>
+      </div>
+      <div class="why-card fade-up">
+        <div class="why-card-icon">&#128336;</div>
+        <h3>Horarios flexibles</h3>
+      </div>
+      <div class="why-card fade-up">
+        <div class="why-card-icon">&#127919;</div>
+        <h3>Enfoque pr&aacute;ctico</h3>
+      </div>
+      <div class="why-card fade-up">
+        <div class="why-card-icon">&#128218;</div>
+        <h3>Material did&aacute;ctico propio</h3>
+      </div>
+      <div class="why-card fade-up">
+        <div class="why-card-icon">&#128172;</div>
+        <h3>Pierdes el miedo a hablar</h3>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== SERVICES ===== -->
+<section id="services">
+  <div class="container text-center">
+    <span class="section-tag">Nuestros Servicios</span>
+    <h2 class="section-title">Todo lo que podemos<br><span>hacer por ti</span></h2>
+    <p class="section-sub">Desde clases particulares hasta programas corporativos completos, adaptados a tus objetivos.</p>
+    <div class="services-grid">
+
+      <div class="service-card fade-up">
+        <div class="service-icon-wrap">&#128188;</div>
+        <h3>Business English</h3>
+        <p>Ingl&eacute;s enfocado en el entorno laboral: negociaciones, presentaciones, correos y reuniones de alto nivel.</p>
+        <a href="#contact" class="service-card-link">Saber m&aacute;s &#8594;</a>
+      </div>
+
+      <div class="service-card fade-up">
+        <div class="service-icon-wrap">&#128100;</div>
+        <h3>Cursos Particulares</h3>
+        <p>Atenci&oacute;n 100% personalizada adaptada a tu nivel, objetivos y ritmo de aprendizaje.</p>
+        <a href="#contact" class="service-card-link">Saber m&aacute;s &#8594;</a>
+      </div>
+
+      <div class="service-card fade-up">
+        <div class="service-icon-wrap">&#127758;</div>
+        <h3>Espa&ntilde;ol para Extranjeros</h3>
+        <p>Clases de espa&ntilde;ol para ejecutivos y profesionistas de habla inglesa que viven o trabajan en M&eacute;xico.</p>
+        <a href="#contact" class="service-card-link">Saber m&aacute;s &#8594;</a>
+      </div>
+
+      <div class="service-card fade-up">
+        <div class="service-icon-wrap">&#127970;</div>
+        <h3>Cursos Empresariales</h3>
+        <p>Programas a medida para empresas que necesitan capacitar a sus equipos en ingl&eacute;s profesional.</p>
+        <a href="#contact" class="service-card-link">Saber m&aacute;s &#8594;</a>
+      </div>
+
+      <div class="service-card fade-up">
+        <div class="service-icon-wrap">&#128221;</div>
+        <h3>Traducciones de Peritaje</h3>
+        <p>Traducciones oficiales de peritaje realizadas por un maestro certificado. Documentos legales, t&eacute;cnicos y corporativos con validez oficial.</p>
+        <a href="#contact" class="service-card-link">Saber m&aacute;s &#8594;</a>
+      </div>
+
+      <div class="service-card fade-up">
+        <div class="service-icon-wrap">&#127891;</div>
+        <h3>Preparaci&oacute;n para el MET</h3>
+        <p>Curso enfocado en el Michigan English Test (MET). Pr&aacute;ctica de las 4 habilidades, estrategias de examen y simulacros para que llegues listo y con confianza.</p>
+        <a href="#contact" class="service-card-link">Saber m&aacute;s &#8594;</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===== PROGRAM ===== -->
+<section id="program">
+  <div class="container text-center">
+    <span class="section-tag">Programa de Estudios</span>
+    <h2 class="section-title">Tu camino hacia la<br><span>fluidez en ingl&eacute;s</span></h2>
+    <p class="section-sub">5 niveles estructurados que te llevan desde los fundamentos hasta la conversaci&oacute;n avanzada y el ingl&eacute;s de negocios.</p>
+  </div>
+
+  <div class="container">
+    <div class="timeline">
+
+      <!-- 1 izquierda -->
+      <div class="tl-item fade-up">
+        <div class="tl-left">
+          <div class="tl-card">
+            <div class="tl-card-header">
+              <div class="tl-card-icon">&#128218;</div>
+              <h3>Book 1</h3>
+            </div>
+            <p><strong>A1 &mdash; A2</strong> &middot; Fundamentos del idioma. Vocabulario esencial, pronunciaci&oacute;n y estructuras b&aacute;sicas para comunicarse en situaciones cotidianas.</p>
+          </div>
+        </div>
+        <div class="tl-center"><div class="tl-node">1</div></div>
+        <div class="tl-empty"></div>
+      </div>
+
+      <!-- 2 derecha -->
+      <div class="tl-item fade-up">
+        <div class="tl-empty"></div>
+        <div class="tl-center"><div class="tl-node">2</div></div>
+        <div class="tl-right">
+          <div class="tl-card">
+            <div class="tl-card-header">
+              <div class="tl-card-icon">&#128217;</div>
+              <h3>Book 2</h3>
+            </div>
+            <p><strong>A2 &mdash; B1</strong> &middot; Nivel elemental-intermedio. Conversaciones m&aacute;s fluidas, gram&aacute;tica esencial y expansi&oacute;n de vocabulario en contextos reales.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 3 izquierda -->
+      <div class="tl-item fade-up">
+        <div class="tl-left">
+          <div class="tl-card">
+            <div class="tl-card-header">
+              <div class="tl-card-icon">&#11088;</div>
+              <h3>Book 3</h3>
+            </div>
+            <p><strong>B1 &mdash; B2</strong> &middot; Nivel intermedio. Comunicaci&oacute;n efectiva en entornos sociales y laborales con mayor fluidez y precisi&oacute;n.</p>
+          </div>
+        </div>
+        <div class="tl-center"><div class="tl-node">3</div></div>
+        <div class="tl-empty"></div>
+      </div>
+
+      <!-- 4 derecha -->
+      <div class="tl-item fade-up">
+        <div class="tl-empty"></div>
+        <div class="tl-center"><div class="tl-node">4</div></div>
+        <div class="tl-right">
+          <div class="tl-card">
+            <div class="tl-card-header">
+              <div class="tl-card-icon">&#128188;</div>
+              <h3>Business English</h3>
+            </div>
+            <p><strong>B2 &mdash; C1</strong> &middot; Ingl&eacute;s de negocios. Negociaciones, presentaciones, correos corporativos y reuniones de alto nivel.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 5 izquierda -->
+      <div class="tl-item fade-up">
+        <div class="tl-left">
+          <div class="tl-card">
+            <div class="tl-card-header">
+              <div class="tl-card-icon">&#128172;</div>
+              <h3>Conversational</h3>
+            </div>
+            <p>Fluidez oral. Din&aacute;micas de conversaci&oacute;n, debate y expresi&oacute;n natural del idioma en situaciones reales del d&iacute;a a d&iacute;a.</p>
+          </div>
+        </div>
+        <div class="tl-center"><div class="tl-node">5</div></div>
+        <div class="tl-empty"></div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===== COMPANIES ===== -->
+<section id="companies">
+  <div class="container text-center">
+    <span class="section-tag">Experiencia Comprobada</span>
+    <h2 class="section-title">Empresas que han confiado<br><span>en English@Work</span></h2>
+    <p class="section-sub">M&aacute;s de 29 a&ntilde;os colaborando con empresas l&iacute;deres a nivel nacional e internacional.</p>
+  </div>
+
+  <div class="carousel-wrapper">
+    <div class="carousel-track">
+      <!-- Set 1 -->
+      <div class="company-card"><div class="company-card-initial">IN</div><span class="company-card-name">Intel</span></div>
+      <div class="company-card"><div class="company-card-initial">JB</div><span class="company-card-name">Jabil</span></div>
+      <div class="company-card"><div class="company-card-initial">SN</div><span class="company-card-name">Sanmina</span></div>
+      <div class="company-card"><div class="company-card-initial">SK</div><span class="company-card-name">SKF</span></div>
+      <div class="company-card"><div class="company-card-initial">DR</div><span class="company-card-name">Driscoll&#39;s</span></div>
+      <div class="company-card"><div class="company-card-initial">PI</div><span class="company-card-name">Pisa</span></div>
+      <div class="company-card"><div class="company-card-initial">ZD</div><span class="company-card-name">Zendesk</span></div>
+      <div class="company-card"><div class="company-card-initial">BI</div><span class="company-card-name">Boehringer Ingelheim</span></div>
+      <div class="company-card"><div class="company-card-initial">EP</div><span class="company-card-name">EPAM</span></div>
+      <div class="company-card"><div class="company-card-initial">UL</div><span class="company-card-name">Ultra Laboratorios</span></div>
+      <div class="company-card"><div class="company-card-initial">NY</div><span class="company-card-name">NY Life</span></div>
+      <div class="company-card"><div class="company-card-initial">PL</div><span class="company-card-name">Placencia</span></div>
+      <div class="company-card"><div class="company-card-initial">MC</div><span class="company-card-name">Maincasa</span></div>
+      <!-- Set 2 (duplicado para loop infinito) -->
+      <div class="company-card"><div class="company-card-initial">IN</div><span class="company-card-name">Intel</span></div>
+      <div class="company-card"><div class="company-card-initial">JB</div><span class="company-card-name">Jabil</span></div>
+      <div class="company-card"><div class="company-card-initial">SN</div><span class="company-card-name">Sanmina</span></div>
+      <div class="company-card"><div class="company-card-initial">SK</div><span class="company-card-name">SKF</span></div>
+      <div class="company-card"><div class="company-card-initial">DR</div><span class="company-card-name">Driscoll&#39;s</span></div>
+      <div class="company-card"><div class="company-card-initial">PI</div><span class="company-card-name">Pisa</span></div>
+      <div class="company-card"><div class="company-card-initial">ZD</div><span class="company-card-name">Zendesk</span></div>
+      <div class="company-card"><div class="company-card-initial">BI</div><span class="company-card-name">Boehringer Ingelheim</span></div>
+      <div class="company-card"><div class="company-card-initial">EP</div><span class="company-card-name">EPAM</span></div>
+      <div class="company-card"><div class="company-card-initial">UL</div><span class="company-card-name">Ultra Laboratorios</span></div>
+      <div class="company-card"><div class="company-card-initial">NY</div><span class="company-card-name">NY Life</span></div>
+      <div class="company-card"><div class="company-card-initial">PL</div><span class="company-card-name">Placencia</span></div>
+      <div class="company-card"><div class="company-card-initial">MC</div><span class="company-card-name">Maincasa</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== MISSION & VISION ===== -->
+<section id="mission">
+  <div class="container">
+    <div class="text-center">
+      <span class="section-tag">Nuestra Filosof&iacute;a</span>
+      <h2 class="section-title">Lo que nos <span>define</span></h2>
+      <p class="section-sub">Los pilares que guían cada clase, cada alumno y cada empresa que confía en nosotros.</p>
+    </div>
+    <div class="mv-grid">
+      <div class="mv-card fade-up">
+        <div class="mv-card-icon">&#127919;</div>
+        <h3>Misión</h3>
+        <p>Lograr que los alumnos aprendan el idioma ingl&eacute;s de forma pr&aacute;ctica y din&aacute;mica, de acuerdo a sus necesidades y destrezas particulares, en un ambiente que fomente la confianza en s&iacute; mismos para ir progresando paulatinamente y llegar a alcanzar un s&oacute;lido conocimiento del idioma.</p>
+      </div>
+      <div class="mv-card vision fade-up">
+        <div class="mv-card-icon">&#128301;</div>
+        <h3>Visi&oacute;n</h3>
+        <p>Ser una Instituci&oacute;n l&iacute;der en la ense&ntilde;anza del idioma ingl&eacute;s, reconocida por su prestigio, sustentado en la excelencia acad&eacute;mica y servicio, comprometidos por mejorar continuamente.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== VALUES ===== -->
+<section id="values">
+  <div class="container text-center">
+    <span class="section-tag">Nuestros Valores</span>
+    <h2 class="section-title">Los principios que<br><span>gu&iacute;an nuestro trabajo</span></h2>
+    <p class="section-sub">Cada interacci&oacute;n con nuestros alumnos y empresas est&aacute; guiada por estos valores fundamentales.</p>
+    <div class="values-grid">
+      <div class="value-card fade-up">
+        <div class="value-icon">&#9889;</div>
+        <h3>Responsabilidad</h3>
+      </div>
+      <div class="value-card fade-up">
+        <div class="value-icon">&#128142;</div>
+        <h3>Honestidad</h3>
+      </div>
+      <div class="value-card fade-up">
+        <div class="value-icon">&#127942;</div>
+        <h3>Prestigio</h3>
+      </div>
+      <div class="value-card fade-up">
+        <div class="value-icon">&#128640;</div>
+        <h3>Liderazgo</h3>
+      </div>
+      <div class="value-card fade-up">
+        <div class="value-icon">&#127775;</div>
+        <h3>Actitud Positiva</h3>
+      </div>
+      <div class="value-card fade-up">
+        <div class="value-icon">&#129309;</div>
+        <h3>Respeto</h3>
+      </div>
+      <div class="value-card fade-up">
+        <div class="value-icon">&#127806;</div>
+        <h3>Cooperaci&oacute;n</h3>
+      </div>
+      <div class="value-card fade-up">
+        <div class="value-icon">&#128172;</div>
+        <h3>Comunicaci&oacute;n</h3>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== ONLINE ===== -->
+<section id="online">
+  <div class="container">
+    <div class="online-grid">
+      <div class="online-content fade-up">
+        <span class="section-tag" style="background:rgba(255,255,255,0.15);color:rgba(255,255,255,0.9);">Clases en Línea</span>
+        <h2>Aprende desde<br><span>donde estés</span></h2>
+        <p>Aprende inglés desde cualquier lugar con nuestras clases 100% en línea y acceso a las grabaciones para repasar cuando lo necesites.</p>
+        <ul class="online-features">
+          <li>Clases en vivo por videollamada</li>
+          <li>Todas las sesiones quedan grabadas</li>
+          <li>Acceso ilimitado a las grabaciones</li>
+          <li>Material digital incluido</li>
+          <li>Soporte por WhatsApp</li>
+          <li>Horarios flexibles adaptados a ti</li>
+        </ul>
+      </div>
+      <div class="online-visual fade-up">
+        <div class="big-icon">🖥️</div>
+        <h3>Plataforma Virtual</h3>
+        <p>Clases interactivas en vivo con la comodidad de tu hogar o donde te encuentres.</p>
+        <br>
+        <div class="big-icon">🎬</div>
+        <h3>Grabaciones Disponibles</h3>
+        <p>¿Perdiste una clase? No hay problema. Todas las sesiones están grabadas y disponibles para ti.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CONTACT ===== -->
+<section id="contact">
+  <div class="container">
+    <div class="text-center">
+      <span class="section-tag">Contacto</span>
+      <h2 class="section-title">&iquest;Listo para empezar?<br><span>Escr&iacute;benos hoy</span></h2>
+      <p class="section-sub">Cu&eacute;ntanos tu objetivo y te ayudamos a encontrar el programa ideal para ti.</p>
+    </div>
+    <div class="contact-grid">
+
+      <div class="contact-info fade-up">
+        <h3>Informaci&oacute;n de Contacto</h3>
+        <div class="contact-item">
+          <div class="contact-item-icon">&#128231;</div>
+          <div class="contact-item-text">
+            <strong>Correo</strong>
+            <span>frankbriseo@yahoo.com</span>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-item-icon">&#128241;</div>
+          <div class="contact-item-text">
+            <strong>Tel&eacute;fono / WhatsApp</strong>
+            <span>333 662 4744</span>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-item-icon">&#128205;</div>
+          <div class="contact-item-text">
+            <strong>Ubicaci&oacute;n</strong>
+            <span>Guadalajara, M&eacute;xico &middot; Clases 100% en l&iacute;nea</span>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-item-icon">&#128336;</div>
+          <div class="contact-item-text">
+            <strong>Horario de Atenci&oacute;n</strong>
+            <span>Lunes a Viernes &middot; 10am &ndash; 6pm</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact-form fade-up">
+        <h3>Env&iacute;anos un mensaje</h3>
+        <form id="contactForm">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="nombre">Nombre completo</label>
+              <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required />
+            </div>
+            <div class="form-group">
+              <label for="correo">Correo electr&oacute;nico</label>
+              <input type="email" id="correo" name="correo" placeholder="tu@correo.com" required />
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="telefono">Tel&eacute;fono</label>
+              <input type="tel" id="telefono" name="telefono" placeholder="+52 333 000 0000" />
+            </div>
+            <div class="form-group">
+              <label for="servicio">Servicio de inter&eacute;s</label>
+              <select id="servicio" name="servicio">
+                <option value="">Selecciona un servicio</option>
+                <option>Business English</option>
+                <option>Curso Particular</option>
+                <option>Curso Empresarial</option>
+                <option>Espa&ntilde;ol para Extranjeros</option>
+                <option>Interpretaci&oacute;n</option>
+                <option>Traducci&oacute;n</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="mensaje">Mensaje</label>
+            <textarea id="mensaje" name="mensaje" placeholder="Cu&eacute;ntanos tu objetivo o pregunta..."></textarea>
+          </div>
+          <button type="submit" class="btn-submit">Enviar Mensaje &#8594;</button>
+          <p id="formMsg" class="form-msg"></p>
+        </form>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-grid">
+
+      <div class="footer-brand">
+        <img src="/static/images/logo.png" alt="English@Work"
+             onerror="this.style.display='none'; this.nextElementSibling.style.display='block'" />
+        <div class="footer-brand-text">English<span>@</span>Work</div>
+        <p>M&aacute;s de 29 a&ntilde;os formando profesionistas y empresas con el ingl&eacute;s que el mundo laboral exige.</p>
+        <div class="social-links">
+          <a href="#" class="social-link" title="Facebook">&#128248;</a>
+          <a href="#" class="social-link" title="Instagram">&#128247;</a>
+          <a href="#" class="social-link" title="LinkedIn">&#128188;</a>
+          <a href="https://wa.me/523336624744" class="social-link" title="WhatsApp">&#128172;</a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>Servicios</h4>
+        <ul>
+          <li><a href="#services">Business English</a></li>
+          <li><a href="#services">Cursos Particulares</a></li>
+          <li><a href="#services">Cursos Empresariales</a></li>
+          <li><a href="#services">Espa&ntilde;ol para Extranjeros</a></li>
+          <li><a href="#services">Traducciones de Peritaje</a></li>
+          <li><a href="#services">Preparaci&oacute;n MET</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Empresa</h4>
+        <ul>
+          <li><a href="#about">Nosotros</a></li>
+          <li><a href="#program">Programa</a></li>
+          <li><a href="#mission">Misi&oacute;n y Visi&oacute;n</a></li>
+          <li><a href="#values">Valores</a></li>
+          <li><a href="#companies">Empresas</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Contacto</h4>
+        <ul>
+          <li><a href="mailto:frankbriseo@yahoo.com">frankbriseo@yahoo.com</a></li>
+          <li><a href="tel:+523336624744">333 662 4744</a></li>
+          <li><a href="#contact">Guadalajara, M&eacute;xico</a></li>
+          <li><a href="#contact">Clases 100% en l&iacute;nea</a></li>
+        </ul>
+      </div>
+
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2025 English@Work. Todos los derechos reservados.</span>
+      <span>Dise&ntilde;ado para Frank Brise&ntilde;o &mdash; Guadalajara, M&eacute;xico</span>
+    </div>
+  </div>
+</footer>
+
+<!-- ===== WHATSAPP FLOAT ===== -->
+<a href="https://wa.me/523336624744?text=Hola,%20me%20interesa%20informaci%C3%B3n%20sobre%20sus%20cursos%20de%20ingl%C3%A9s"
+   class="whatsapp-float" target="_blank" title="Chatea por WhatsApp">
+  💬
+</a>
+
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
